@@ -1,0 +1,73 @@
+{
+  "consumer": {
+    "name": "SampleConsumer"
+  },
+  "interactions": [
+    {
+      "description": "A GET request for sample data",
+      "pending": false,
+      "request": {
+        "method": "GET",
+        "path": "/api/sample/data"
+      },
+      "response": {
+        "body": {
+          "content": {
+            "description": "Sample description",
+            "id": 1,
+            "name": "SampleName"
+          },
+          "contentType": "application/json",
+          "encoded": false
+        },
+        "headers": {
+          "Content-Type": [
+            "application/json"
+          ]
+        },
+        "matchingRules": {
+          "body": {
+            "$.description": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.id": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            },
+            "$.name": {
+              "combine": "AND",
+              "matchers": [
+                {
+                  "match": "type"
+                }
+              ]
+            }
+          }
+        },
+        "status": 200
+      },
+      "type": "Synchronous/HTTP"
+    }
+  ],
+  "metadata": {
+    "pactRust": {
+      "ffi": "0.4.27",
+      "models": "1.2.8"
+    },
+    "pactSpecification": {
+      "version": "4.0"
+    }
+  },
+  "provider": {
+    "name": "SampleProvider"
+  }
+}
