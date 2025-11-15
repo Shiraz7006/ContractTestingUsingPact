@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProviderPactTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f9a93abc9ec8a3a1496ca65398df06eb81c71e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProviderPactTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProviderPactTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
